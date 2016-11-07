@@ -6,8 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./show-message.component.css']
 })
 export class ShowMessageComponent implements OnInit {
+  //Declare and initialise a string
+  clickMessage: string = "";
 
   constructor() { }
+
+  //This method handles the button clickMessage
+  //Sets the clickMessage property = text input
+  //No validation - bad idea!
+  onClickMe(myMessage: string){
+    this.clickMessage = myMessage;
+  }
 
   ngOnInit() {
   }
